@@ -1,9 +1,8 @@
 package web.service;
 
-import org.springframework.stereotype.Repository;
+
 import org.springframework.stereotype.Service;
 import web.models.Car;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,9 +16,6 @@ public class CarService {
         car.add(new Car(3, "model3", 3));
         car.add(new Car(4, "model4", 4));
         car.add(new Car(5, "model5", 5));
-    }
-    public List<Car> carAll() {
-        return car;
     }
     public List<Car> carQty(int qty) {
         if(qty > 0 && qty <= car.size()) {
